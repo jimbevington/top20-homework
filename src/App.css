@@ -1,9 +1,22 @@
 .song-title, .chart-position, .artist {
   display: inline-block;
+  padding-right: 15px;
+}
+
+.chart-position{
+  padding-right: 20px;
 }
 
 .song-title{
   text-align: left;
+}
+
+.artist {
+  text-align: right;
+}
+
+.song-title, .artist {
+  font-size: 0.8em;
 }
 
 .chart-list {
@@ -14,5 +27,5 @@
 .chart-entry {
   display: flex;
   flex-flow: row;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
