@@ -14,11 +14,8 @@ const ChartList = (props) => {
     )
   })
 
-  // const entry = props.top20[0];
-  // console.log(entry);
-
   return (
-    <ul>
+    <ul className='chart-list'>
       {chartEntries}
     </ul>
   )
