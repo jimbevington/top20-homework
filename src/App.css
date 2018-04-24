@@ -2,7 +2,17 @@
   display: inline-block;
 }
 
+.song-title{
+  text-align: left;
+}
+
 .chart-list {
   list-style: none;
   width: 500px;
+}
+
+.chart-entry {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
 }
