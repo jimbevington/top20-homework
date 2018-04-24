@@ -1,5 +1,6 @@
 import React from 'react';
 import ChartList from '../components/ChartList';
+import Heading from '../components/Heading';
 
 class ChartBox extends React.Component {
   constructor(props){
@@ -18,6 +19,7 @@ class ChartBox extends React.Component {
   render(){
     return (
       <React.Fragment>
+        <Heading />
         <ChartList top20={this.state.top20} />
       </React.Fragment>
     )
