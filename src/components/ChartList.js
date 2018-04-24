@@ -15,9 +15,14 @@ const ChartList = (props) => {
   })
 
   return (
-    <ul className='chart-list'>
+    <table>
+      <tr className='chart-list'>
+        <th>#</th>
+        <th>Track</th>
+        <th>Artist</th>
+      </tr>
       {chartEntries}
-    </ul>
+    </table>
   )
 }
 
