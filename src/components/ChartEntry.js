@@ -11,6 +11,7 @@ const ChartEntry = (props) => {
         alt={props.title}/>
       <h3 className="song-title">{props.title}</h3>
       <h3 className="artist">{props.artist}</h3>
+      <audio src={props.sample} controls></audio>
     </li>
   );
 }

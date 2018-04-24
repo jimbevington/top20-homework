@@ -11,6 +11,7 @@ const ChartList = (props) => {
         image={entry['im:image'][2]['label']}
         title={entry['im:name']['label']}
         artist={entry['im:artist']['label']}
+        sample={entry['link'][1]['attributes']['href']}
       />
     )
   })
