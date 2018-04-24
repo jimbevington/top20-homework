@@ -1,4 +1,5 @@
 import React from 'react';
+import ChartList from '../components/ChartList';
 
 class ChartBox extends React.Component {
   constructor(props){
@@ -15,7 +16,11 @@ class ChartBox extends React.Component {
   }
 
   render(){
-    return <h1>Hello World</h1>
+    return (
+      <React.Fragment>
+        <ChartList />
+      </React.Fragment>
+    )
   }
 }
 
