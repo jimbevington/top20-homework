@@ -8,6 +8,7 @@ const ChartList = (props) => {
       <ChartEntry
         key={index}
         position={index + 1}
+        image={entry['im:image'][2]['label']}
         title={entry['im:name']['label']}
         artist={entry['im:artist']['label']}
       />
