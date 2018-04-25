@@ -1,18 +1,38 @@
-.song-title, .chart-position, .artist {
+/* .song-title, .chart-position, .artist {
   display: inline-block;
   padding-right: 15px;
+} */
+
+.chart-box {
+  display: flex;
+  flex-flow:column;
+  justify-content: center;
+  margin: 2em;
+  width: 1000px;
+  border: outset 3px darkgrey;
+}
+
+.chart-list, .heading {
+  width: 900px;
+}
+
+audio {
+  font-size: 0.5em;
+  width: 150px;
 }
 
 .chart-position{
-  padding-right: 20px;
+  font-size: 4em;
+  margin: 0.8em;
 }
 
 .song-title{
-  text-align: left;
+  font-style: italic;
 }
 
 .artist {
-  text-align: right;
+  font-weight: bold;
+  font-size: 3em;
 }
 
 .song-title, .artist {
@@ -21,11 +41,42 @@
 
 .chart-list {
   list-style: none;
-  width: 500px;
+  width: 900px;
 }
 
 .chart-entry {
+  padding: 15px;
   display: flex;
   flex-flow: row;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content:center;
+  margin: 30px;
+  border: inset 2px darkgrey;
+  border-radius: 10px;
+  background-color: orange;
+}
+
+.heading {
+  text-align: center;
+}
+
+.media {
+  display: flex;
+  flex-flow: column;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 30px;
+  border: outset 3px lightgrey;
+  background-color: beige;
+  border-radius: 5px
+}
+
+.details {
+  font-size: 1.5em;
+  min-width: 400px;
+}
+
+.centre-text {
+  text-align: center;
 }

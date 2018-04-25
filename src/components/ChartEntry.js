@@ -4,14 +4,18 @@ const ChartEntry = (props) => {
   return (
     <li className="chart-entry">
       <h2 className="chart-position">{props.position}</h2>
-      <img
-        height="50px"
-        width="50px"
-        src={props.image}
-        alt={props.title}/>
-      <h3 className="song-title">{props.title}</h3>
-      <h3 className="artist">{props.artist}</h3>
-      <audio src={props.sample} controls></audio>
+      <div className='media'>
+        <img
+          height="150px"
+          width="150px"
+          src={props.image}
+          alt={props.title}/>
+          <audio src={props.sample} controls></audio>
+      </div>
+      <div className="details">
+        <p className="song-title centre-text">{props.title}</p>
+        <p className="artist centre-text">{props.artist}</p>
+      </div>
     </li>
   );
 }

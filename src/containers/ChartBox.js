@@ -18,10 +18,10 @@ class ChartBox extends React.Component {
 
   render(){
     return (
-      <React.Fragment>
+      <div className='chart-box'>
         <Heading />
         <ChartList top20={this.state.top20} />
-      </React.Fragment>
+      </div>
     )
   }
 }
